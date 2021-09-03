@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <div id="headerDIV" class="header">
+        <!---this div is for the main logo of top left corner-->
+        <div>
+            <img src="logo.png" class="mainLogo" alt="ToDoLogo">
+        </div>
+        <!---this div tag is for add task button at top right corner-->
+        <div class="headNavButtonsContainer">
+            <div class="addTask">
+            <a class="linkTag" onclick="showInputText()">
+        <p class="btntext">Add Task</p></a>
+            </div>
+        </div>
+    </div>
+    <div class="noDataFound">Add your first todo by pressing "Add Task" button at the top right corner</div>
+
+
+
+        <!----this div tag is to show text area, save and delete icon-->
+        <div class="addTaskContainer" id="addtaskcontainerid">
+            <div id="ItemContainer" class="itemcontainer">
+
+<!----this div tag is to show text area-------->
+        <div class="taskInputFieldContainer">
+            <textarea class="addTaskInputField"
+            id="todoinputfield" type="text" required=""></textarea>
+        </div>
+        <div class="addTaskEditBtnContainer">
+
+            <!---this div tag is to show save icon-->
+            <div class="addTaskBtnIconsContainer"
+            title="Save">
+        <img src="diskette.png" class="saveTaskIcon" onclick="createTodo()"></div>
+
+        <!----this div tag is to show delete icon-->
+        <div id="cancelBtnId" class="deleteIconsContainer" title="Cancel">
+            <img src="delete.png" onclick="clearText()">
+        </div>
+        </div>
+    </div>
+    </div>
+    </body>
+        </html>
