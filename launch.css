@@ -1,0 +1,96 @@
+.loginDiv{
+    display:flex;
+    margin: 86px;
+    height: 75%;
+}
+
+.notepadCls{
+    border-top-right-radius: 235px;
+    border-bottom-right-radius: 235px;
+    background-color: white;
+    width: 70%;
+    margin-left: 70px;
+    z-index: 1;
+}
+
+.todoimage{
+    width:60%;
+    height: 80%;
+    margin-top:60px;
+
+}
+
+/*right side part of the login*/
+.todoOuterCls{
+    position: absolute;
+    height: 73%;
+    left:46%;
+    background-color: #b763d8;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.todoDivCls{
+    background-color: #77b5da;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 80%;
+    height: 80%;
+    z-index: 2;
+    position: relative;
+}
+.todoInnerDivCls{
+    padding: 10% 0 0 0%;
+}
+
+/*Include the color and font family to Title*/
+.logintitle{
+    font-size: 2vw;
+    width: 30vw;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/*include height and padding for the image*/
+.loginTodoCls{
+    height: 60px;
+    padding: 16% 0 0 30%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    .loginDiv{
+        width: 85%;
+        margin: 86ps 10px 86px 35px;
+    }
+
+
+.notepadCls{
+    width: 45%;
+}
+
+.loginTodoCls{
+    padding: 12% 0 0 12%;
+    height: 35px;
+}
+}
+
+@media screen and (max-width:650px){
+    .todoDivCls{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .loginTodoCls{
+        height: 35px;
+    }
+   .todoDivCls{
+       margin-left: 20px;
+   } 
+    .loginDiv{
+        margin: 86px 10px 86px 35px
+    }
+}
